@@ -25,6 +25,10 @@
 #ifndef _SPL_ATOMIC_H
 #define	_SPL_ATOMIC_H
 
+#ifdef refcount_t
+#undef refcount_t
+#endif
+
 #include <linux/module.h>
 #include <linux/spinlock.h>
 #include <sys/types.h>
